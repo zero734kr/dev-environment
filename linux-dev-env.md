@@ -19,7 +19,7 @@ Git 설치
     $ brew install git
     ```
 
-- 참조 문서 : [Git 설치, 설정, 사용법(상세)][mac_git]
+- 참조 문서 : [Git 설치, 설정, 사용법(상세)][linux_git]
 
 Gnome 터미널 설정
 ---------------
