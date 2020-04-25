@@ -1,22 +1,29 @@
-Mac 개발환경 구축 - git
+Linux 개발환경 구축 - git
 ======================
-Mac으로 개발에 들어가기전 필요한 git 개발을 위한 최소한의 설정을 기술하며, 아래 기술한 내용들을 무조건 따라야하는 것은 아니고 처음 git을 접했을때 헤매지 않도록 하기 위한 최소한의 장치라고 생각하자.
+Linux으로 개발에 들어가기전 필요한 git 개발을 위한 최소한의 설정을 기술하며, 아래 기술한 내용들을 무조건 따라야하는 것은 아니고 처음 git을 접했을때 헤매지 않도록 하기 위한 최소한의 장치라고 생각하자.
 
 git 설치
 ---
-```
-> brew install git
-> ssh-keygen
-> git config --global user.name "mimul"
-> git config --global user.email "hahojin@gmail.com"
-> git config --global color.ui auto
+```sh
+$ brew install git # Linux에서 git은 빌트인입니다.
+$ ssh-keygen
+$ git config --global user.name "mimul"
+$ git config --global user.email "hahojin@gmail.com"
+$ git config --global color.ui auto
 ```
 git 기본 환경 설정 - config
 ---
 git을 사용하는데 필요한 설정 정보를 기술한다.
 
-#### 1. 환경 설정
+
+#### 들어가기 전에
+```sh
+$ python3 -m pip install diff-highlight
 ```
+diff-highlight를 설치한다.
+
+#### 1. 환경 설정
+```sh
 > vi ~/.gitconfig
 [user]
         name = mimul
@@ -108,9 +115,9 @@ diff-highlight 행수준 diff 뿐만 아니라, 단어 수준에서의 diff도 �
 
 #### 5. gitignore 설정
 git 관리에서 제외할 대상들을 기술한다.
-```
-> vi ~/.gitignore
-# Mac OS X hidden files
+```sh
+$ vi ~/.gitignore
+# hidden files
 .DS_Store
 .settings
 .classpath

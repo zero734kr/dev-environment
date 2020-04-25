@@ -2,18 +2,21 @@ StartUp 소프트웨어 개발 조직이 갖추어야 할 문화
 ======================
 개발 전반에 걸친 가이드 문서화
 ---------------
+
+> 이 포크 레포지토리는 [mimul/dev-environment](https://github.com/mimul/dev-environment)에서 Mac을 위한 개발 환경을 Linux로 고친 것이며, Linux Mint 19.03 Tricia를 기준으로 삼았습니다. 이로 인해 레드햇 리눅스 계열 또는 그 외의 계열에서 100% 결과가 같을 것으로 장담 해드릴수 없습니다.
+
 이 문서들은 개발에 필요한 최소한의 이해를 돕고자 하는 것이지 개발에 전부라고 생각하지 않으며, 수동적 추종자가 아닌 창의적 능동자가 되길 빌며, 다양한 케이스들을 탐구해서 해당 문서를 개선해주고, 필요한 문서들이 있다면 자유롭게 추가해 주세요.
 
 - 개발 환경 가이드 : 좋은 개발 도구와 더불어 신규 프로젝트, 신규 입사자에게 필요한 설정 정보들, 필요한 어플, 그리고 그 어플들의 사용 방법, 단축키 등 개발 환경에 필요한 가이드를 제공해 불필요한 비용을 줄인다.
-  - [Mac에서 개발환경 구축 가이드][dev_guide]
-  - [Mac에서 git 환경](https://github.com/mimul/dev-environment/blob/master/mac-git.md)
-  - [개발 프로세스 가이드](https://github.com/mimul/dev-environment/blob/master/dev-process.md): 최신 트렌드를 반영한 최소한의 개발 프로세스에 대한 가이드를 제공한다.(Trello + Github + Slack)
-  - [코드리뷰](https://github.com/mimul/dev-environment/blob/master/code-review.md) : 코드 리뷰에 필요한 정보들을 정리해 제공한다.
+  - [Linux에서 개발환경 구축 가이드][dev_guide]
+  - [Linux에서 git 환경](https://github.com/zero734kr/dev-environment/blob/master/mac-git.md)
+  - [개발 프로세스 가이드](https://github.com/zero734kr/dev-environment/blob/master/dev-process.md): 최신 트렌드를 반영한 최소한의 개발 프로세스에 대한 가이드를 제공한다.(Trello + Github + Slack)
+  - [코드리뷰](https://github.com/zero734kr/dev-environment/blob/master/code-review.md) : 코드 리뷰에 필요한 정보들을 정리해 제공한다.
 - 좋은 코드 작성하기
-  - [정적분석](https://github.com/mimul/dev-environment/blob/master/static-analysis.md)
-  - [리팩토링](https://github.com/mimul/dev-environment/blob/master/refactoring.md) : 좋은 코드를 작성하기 위한 몇가지 지침(리팩토링의 기준점들, 네이밍, 가이드 등)을 제공한다.
-  - [오픈 소스](https://github.com/mimul/dev-environment/blob/master/opensource.md) : 오픈 소스 도입시 고혀사항, 라이선스, 괜찮은 오픈 소스들에 대한 정보를 제공한다.
-- [Markdown Template](https://github.com/mimul/dev-environment/blob/master/markdown-template.md) : 필요한 Markdown 문법 등 사용 가이드 제공해 활용도를 높여준다.
+  - [정적분석](https://github.com/zero734kr/dev-environment/blob/master/static-analysis.md)
+  - [리팩토링](https://github.com/zero734kr/dev-environment/blob/master/refactoring.md) : 좋은 코드를 작성하기 위한 몇가지 지침(리팩토링의 기준점들, 네이밍, 가이드 등)을 제공한다.
+  - [오픈 소스](https://github.com/zero734kr/dev-environment/blob/master/opensource.md) : 오픈 소스 도입시 고혀사항, 라이선스, 괜찮은 오픈 소스들에 대한 정보를 제공한다.
+- [Markdown Template](https://github.com/zero734kr/dev-environment/blob/master/markdown-template.md) : 필요한 Markdown 문법 등 사용 가이드 제공해 활용도를 높여준다.
 - 기술 블로그(Comming soon)
 
 코드 리뷰 장려
@@ -83,4 +86,4 @@ StartUp 소프트웨어 개발 조직이 갖추어야 할 문화
 2. [작지만 강한 팀 꾸리기](http://www.mimul.com/pebble/default/2011/01/31/1296401014320.html)
 3. [조직의 생산성을 올리려면](http://www.mimul.com/pebble/default/2015/04/30/1430380681414.html)
 
-[dev_guide]: https://github.com/mimul/dev-environment/blob/master/mac-dev-env.md
+[dev_guide]: https://github.com/zero734kr/dev-environment/blob/master/mac-dev-env.md

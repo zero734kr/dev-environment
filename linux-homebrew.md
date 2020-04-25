@@ -14,15 +14,12 @@ Homebrew의 어원은 맥주를 스스로 양조해서 마신다는 뜻으로, �
 Homebrew 설치
 ---------------
 ### 1. 사전 필요한 소프트웨어
-- Java는 디폴트로 설치되어 있음.
-- Command Line Tools은 App Store에서 [Xcode](https://itunes.apple.com/jp/app/xcode/id497799835?mt=12) 를 다운로드 할 수 있다. 설치가 완료되면 터미널에서 아래 커맨드를 실행한다.
-	`$ xcode-select --install`
-	Command Line Tools를 설치하면, gcc 같은 명령을 사용할 수 있게 된다.
+- [cURL](https://curl.haxx.se/): `sudo apt install curl`
 
 ### 2. Homebrew 설치
 아래 커맨드를 실행하면 자동으로 설치된다.
 ```
-$ ruby -e "$ (curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 $ brew doctor # 문제 진단을 해줌.
 $ brew update # 최신버전 업데이트.
 ```
@@ -71,32 +68,35 @@ $ brew remove wget
 ### Homebrew 설정 목록
 ```
 $ brew --config
-HOMEBREW_VERSION: 0.9.5
-ORIGIN: https://github.com/Homebrew/homebrew
-HEAD: b2e5a220a7fb9e8ee14be122b2bd0d345dc3bdee
-Last commit: 3 months ago
-HOMEBREW_PREFIX: /usr/local
-HOMEBREW_CELLAR: /usr/local/Cellar
-CPU: 8-core 64-bit haswell
-OS X: 10.10.4-x86_64
-Xcode: N/A
-CLT: 6.4.0.0.1.1435007323
-Clang: 6.1 build 602
-X11: N/A
-System Ruby: 2.0.0-p481
-Perl: /usr/bin/perl
-Python: /Users/mimul/.pyenv/shims/python => /Users/mimul/.pyenv/versions/3.4.3/bin/python3.4
-Ruby: /usr/bin/ruby
-Java: 1.7.0_76
+HOMEBREW_VERSION: 2.2.13
+ORIGIN: https://github.com/Homebrew/brew
+HEAD: 3d9cf83fec45a75af61551f53d25383abe009d31
+Last commit: 12 days ago
+Core tap ORIGIN: https://github.com/Homebrew/linuxbrew-core
+Core tap HEAD: 771578aea930610b3d16d3c238fe057971add9c1
+Core tap last commit: 9 days ago
+HOMEBREW_PREFIX: /home/linuxbrew/.linuxbrew
+HOMEBREW_DISPLAY: :0
+HOMEBREW_EDITOR: mvim
+HOMEBREW_MAKE_JOBS: 2
+CPU: dual-core 64-bit unknown_0x15_0x13
+Homebrew Ruby: 2.6.3 => /home/linuxbrew/.linuxbrew/Homebrew/Library/Homebrew/vendor/portable-ruby/2.6.3/bin/ruby
+Clang: N/A
+Git: 2.17.1 => /usr/bin/git
+Curl: 7.58.0 => /usr/bin/curl
+Kernel: Linux 5.3.0-46-generic x86_64 GNU/Linux
+OS: Linux Mint 19.3 Tricia (tricia)
+Host glibc: 2.27
+/usr/bin/gcc: 7.5.0
+glibc: N/A
+gcc: N/A
+xorg: N/A
 ```
 
 ### Homebrew를 제거
 ```
 $ cd `brew --prefix`
-$ rm -rf Cellar
 $ brew prune
-$ rm `git ls-files`
-$ rmdir Library/Homebrew Library/Aliases Library/Formula Library/Contributions
-$ rm -rf .git
-$ rm -rf ~/Library/Caches/Homebrew
+$ sudo rm -rf * && cd ~ && sudo rm -rf /home/linuxbrew
+$ rm -rf ~/.cache/Homebrew
 ```
