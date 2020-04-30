@@ -39,7 +39,7 @@ $ wget https://github.com/tonsky/FiraCode/releases/download/3.1/FiraCode_3.1.zip
 $ sudo apt install unzip # zip 파일 압축 해제 패키지 다운로드
 $ unzip FiraCode_3.1.zip -d ~/.firacode # ~/.firacode로 압축 파일의 내용물 저장
 $ cd .firacode/ttf 
-$ sudo mv * /usr/share/fonts # True Type 폰트들을 시스템 폰트 디렉터리로 이동 
+$ sudo mv * /usr/share/fonts/truetype # True Type 폰트들을 시스템 폰트 디렉터리로 이동 
 $ sudo fc-cache -vf # 폰트 캐시 업데이트
 # 그리고 다운로드 받은 Fira Code 폰트를 적재 적소에 사용한다. (예시: vsc)
 # 주의: Gnome Terminal에서는 Fira Code 폰트가 작동을 안 한다.
