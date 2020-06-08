@@ -25,7 +25,7 @@ Gnome 터미널 설정
 ---------------
 Gnome 터미널은 최대한 깔끔하게 쓰는게 좋다.
 ```sh
-$ sh -c `curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh` # Oh My ZSH 설치
+$ sh -c `curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh` # Oh My ZSH 설치
 $ chsh -s /bin/zsh # zsh를 기본 터미널로 설정
 $ sudo apt-get install dconf-cli # 필요한 패키지 설치
 
